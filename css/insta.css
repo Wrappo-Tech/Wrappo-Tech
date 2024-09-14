@@ -1,0 +1,51 @@
+/* Container with a background image */
+.info-container {
+    background-image: url('background.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align info box to the left */
+    align-items: center; /* Center vertically */
+    padding-left: 50px;
+}
+
+/* Info Box styling */
+.info-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px; /* Width of the info box */
+}
+
+/* Info Header styling (logo and title) */
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and title */
+    margin-bottom: 15px;
+}
+
+/* Logo styling */
+.info-logo {
+    max-width: 60px; /* Logo size */
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Title styling */
+.info-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Description styling */
+.info-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}

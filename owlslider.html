@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>owl slider</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="slider-area" class="owl-carousel">
+        <div style="background-image: url(assets/Slide\ 1.svg);"></div>
+        <div style="background-image: url(assets/Slide\ 2.svg)"></div>
+        <div style="background-image: url(assets/Slide\ 3.svg)"></div>
+        <div style="background-image: url(assets/Slide\ 4.svg)"></div>
+      </div>
+    </div>
+
+    <div class="nav-area">
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Blogs</a>
+        <a href="#">Careers</a>
+        <a href="#">Let's Connect</a>
+      </div>
+    </div>
+
+    <div class="slider-text">
+      <h2>Lorem <span>Ipsum</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+        quo?
+      </p>
+      <a href="#">Learn More</a>
+      <a href="#" class="btn">Contact Us</a>
+    </div>
+
+    <script>
+      $("#slider-area").owlCarousel({
+        loop: true,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </body>
+</html>

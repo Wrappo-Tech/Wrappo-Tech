@@ -1,0 +1,170 @@
+/* ----Basic css---- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    ul {
+        list-style: none;
+    }
+
+    header {
+        background-color: #faf9f0;
+        max-height: 100px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+/* ====Navbar==== */
+#Navbar {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: Playfair display;
+    font-size: 20px;
+    font-weight: 600;
+
+    /* ----Logo styling---- */
+    .navbar-container {
+        position: relative;
+        display: flex;
+        max-width: 160px;
+        max-height: 160px;
+    }
+
+    /* ----Navbar content margin---- */
+    .contents {
+        margin-left: 180px;
+        margin-top: -10px;
+    }
+
+    /* ----Navbar list contents---- */
+    .nav-contents {
+        width: max-content;
+        display: flex;
+        flex-basis: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ----Navbar list items---- */
+    .nav {
+        margin: 0px 60px;
+        transition: background-color 0.5s;
+
+        .hnav:link,.hnav:visited {
+            color: #21201e;
+        }
+
+        .hnav:active {
+            color: #f0551f;
+            font-weight: bold;
+        }
+
+        .hnav:hover {
+            color: #f0551f;
+        }
+
+        .hnav:focus {
+            color: #a33b15;
+        }
+
+        
+    }
+
+    /* ----Navbar button---- */
+    .btn {
+        width: max-content;
+        padding: 12px 24px;
+        border-radius: 40px;
+        background-color: transparent;
+        border-color: #21201e;
+        font-weight: bold;
+    }
+
+    .btn :hover {
+        width: max-content;
+        padding: 12px 24px;
+        border-radius: 40px;
+        border-color: transparent;
+        background-color: #21201e;
+        color: #faf9f0;
+    }
+}
+
+.counter-section {
+    width: 100%;
+    background-color: #faf9f0;
+    padding: 50px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container {
+    display: flex;
+    background-color: #faf9f0;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.counter {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    margin: 20px;
+    font-size: 32px;
+    font-family: "DM Serif Text";
+}
+
+.count {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    color: #3f51b5;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    width: 60%;
+    background-color: antiquewhite;
+    padding: 10px 20px 20px 0;
+}
+
+.content {
+    display: block;
+    font-size: 24px;
+    margin-right: 60px;
+}
+
+.blogs-section {
+    width: 100%;
+    height: auto;
+}
+
+.blogs-container {
+    display: contents;
+    justify-content: space-evenly;
+}
+
+.blog-item {
+    height: 400px;
+
+}
+
+.copyrights-section {
+    width: 100%;
+    margin-top: 20px;
+    font-family: DM serif text;
+}
+
+.copyrights-container {
+    display: flex;
+    justify-content: center;
+
+}

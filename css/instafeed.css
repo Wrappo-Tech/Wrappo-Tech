@@ -1,0 +1,63 @@
+/* Main container for posts */
+.posts-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Individual post */
+.post {
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+  max-width: 30%; /* Max width of the posts */
+  box-sizing: border-box;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  height: calc(100vh / 3); /* Post height responsive to screen size */
+}
+
+/* On hover, slightly scale the post */
+.post:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure post content doesn't overflow */
+.post-content {
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Title inside post */
+.post-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Body text inside post */
+.post-body {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Make the layout responsive */
+@media (max-width: 1200px) {
+  .post {
+    flex-basis: 45%;
+    max-width: 45%;
+    height: calc(100vh / 2); /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .post {
+    flex-basis: 100%;
+    max-width: 100%;
+    height: calc(100vh / 2); /* Adjust height for small screens */
+  }
+}

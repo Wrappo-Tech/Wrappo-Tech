@@ -1,0 +1,147 @@
+* {
+    width: 100%;
+
+    ul {
+        list-style: none;
+    }
+
+    header {
+        background-color: #faf9f0;
+        max-height: 100px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+/* ====Navbar==== */
+#Navbar {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: Playfair display;
+    font-size: 20px;
+    font-weight: 600;
+
+    /* ----Logo styling---- */
+    .navbar-container {
+        position: relative;
+        display: flex;
+        max-width: 160px;
+        max-height: 160px;
+    }
+
+    /* ----Navbar content margin---- */
+    .contents {
+        margin-left: 180px;
+        margin-top: -10px;
+    }
+
+    /* ----Navbar list contents---- */
+    .nav-contents {
+        width: max-content;
+        display: flex;
+        flex-basis: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ----Navbar list items---- */
+    .nav {
+        margin: 0px 60px;
+        transition: background-color 0.5s;
+
+        .hnav:link,.hnav:visited {
+            color: #21201e;
+        }
+
+        .hnav:active {
+            color: #f0551f;
+        }
+
+        .hnav:hover {
+            color: #f0551f;
+        }
+
+        .hnav:focus {
+            color: #a33b15;
+        }
+
+        
+    }
+
+    /* ----Navbar button---- */
+    .btn {
+        width: max-content;
+        padding: 12px 24px;
+        border-radius: 40px;
+        background-color: transparent;
+        border-color: #21201e;
+        font-weight: bold;
+    }
+
+    .btn :hover {
+        width: max-content;
+        padding: 12px 24px;
+        border-radius: 40px;
+        border-color: transparent;
+        background-color: #21201e;
+        color: #faf9f0;
+    }
+}
+
+
+
+
+
+body {
+    width: 100%;
+
+
+    /* Logo styling */
+    .image {
+        max-width: 200px;
+        max-height: 200px;
+        padding: 20px 40px;
+    }
+
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 1200px) {
+        .logo {
+            width: 180px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .logo {
+            width: 150px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .logo {
+            width: 120px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .logo {
+            width: 100px;
+        }
+    }
+
+
+    .copyrights-section {
+        width: 100%;
+        margin-top: 20px;
+        font-family: DM serif text;
+    }
+
+    .copyrights-container {
+        display: flex;
+        justify-content: center;
+
+    }
+}

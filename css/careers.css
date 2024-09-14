@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+
+
+    /* Logo styling */
+    .image {
+        max-width: 200px;
+        max-height: 200px;
+        padding: 20px 40px;
+    }
+
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 1200px) {
+        .logo {
+            width: 180px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .logo {
+            width: 150px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .logo {
+            width: 120px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .logo {
+            width: 100px;
+        }
+    }
+
+
+    .copyrights-section {
+        width: 100%;
+        margin-top: 20px;
+        font-family: DM serif text;
+    }
+
+    .copyrights-container {
+        display: flex;
+        justify-content: center;
+
+    }
+}
